@@ -82,11 +82,39 @@
         <li>Website:    <input type="url" name="Website" placeholder="http://"/></li>
         <li>Phone Number:<input type="text" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /></li>
         <li>Passport Number:<input type="text" name="passport" placeholder="XXX0000" pattern="[A-Z]{3}[0-9]{4}"/></li>
-        <p>(3 Capital Letters + 4 Numbers)</p>
+        <p><em>(3 Capital Letters + 4 Numbers)</em></p>
         <li>EirCode:<input type="text" name="eircode" placeholder="D00" pattern="[A-Z]{1}[0-9]{2}"/></li>
         <li>Credit Card:<input type="number" name="creditcard" placeholder="1111222233334444" pattern="[0-9]{16}"/></li>
         <li>Birthday<input type="date" name="date" /></li>
-
+<br>
+         <label for="meal">Meal:</label>
+            <li>Starter<input type="checkbox" name="meal" value="Starter"/></li>
+            <li>Main<input type="checkbox" name="meal"’ value="Main" checked="" /></li>
+            <li>Desert<input type="checkbox" name="meal" value="Desert"/></li>
+<br>
+         <label for="gender">Gender:</label>
+            <li>Male<input type="radio" name="gender" value="Male"/></li>
+            <li>Female<input type="radio" name="gender" value="Female"/></li>
+            <li>Other<input type="radio" name="gender" value="Other"/></li>
+<br>
+         <label for="zodiac">Zodiac:</label>
+            <select id="zodiac">
+               <option value="aries">Aries</option>
+               <option value="taurus">Taurus</option>
+               <option value="gemini">Gemini</option>
+               <option value="cancer">Cancer</option>
+            </select>
+<br><br>
+         <label for="music">Music Genres:</label>
+            <input list="genres" name="genre">
+            <datalist id="genres">
+               <option value="Disco">
+               <option value="Classic">
+               <option value="New Age">
+            </datalist>
+<br><br>
+         <label for="survey">From 0 to 10: How happy are you with this form?</label>
+            <input value="survey" type="range" min="0" max="10"/>
       </ul>
 
 
