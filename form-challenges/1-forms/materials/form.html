@@ -70,48 +70,24 @@
       <div id="container">
 
 
-<form action="/my-handling-form-page" method="post">
+<form id="UserReg" action="/my-handling-form-page" method="post">
 
 <fieldset>
     <legend>Registration</legend>
-
-      <p>
-        <label for="name">First Name:</label>
-        <input type="text" id="FirstName" required/>
-      </p>
-      <p>
-        <label for="password">Password:</label>
-        <input type="password" id="Password" required/>
-      </p>
-      <p>
-        <label for="age">Age:</label>
-        <input type="number" id="age" required min="0" max="120"/>
-      </p>
-      <p>
-        <label for="email">Email:</label>
-        <input type="email" id="email" required autofocus placeholder="your@email.com"/>
-      </p>
-      <p>
-        <label form="website">Website:</label>
-        <input type="url" id="Website" placeholder="http://"/>
-      </p>
-      <p>
-        <label form="phone">Phone Number:</label>
-        <input type="text" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-      </p>
-      <p>
-        <label form="phone">Passport Number:</label>
-        <input type="text" id="passport" placeholder="XXX0000" pattern="[A-Z]{3}[0-9]{4}"/>
+      <ul>
+        <li>First Name: <input type="text" name="fname" required/></li>
+        <li>Password:   <input type="password" name="Password" required/></li>
+        <li>Age:        <input type="number" name="age" required min="0" max="120"/></li>
+        <li>Email:      <input type="email" name="email" required autofocus placeholder="your@email.com"/></li>
+        <li>Website:    <input type="url" name="Website" placeholder="http://"/></li>
+        <li>Phone Number:<input type="text" name="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /></li>
+        <li>Passport Number:<input type="text" name="passport" placeholder="XXX0000" pattern="[A-Z]{3}[0-9]{4}"/></li>
         <p>(3 Capital Letters + 4 Numbers)</p>
-      </p>
-      <p>
-        <label form="eircode">EirCode:</label>
-        <input type="text" id="eircode" placeholder="D00" pattern="[A-Z]{1}[0-9]{2}"/>
-      </p>
-      <p>
-        <label form="creditcard">Credit Card:</label>
-        <input type="number" id="creditcard" placeholder="1111222233334444" pattern="[0-9]{16}"/>
-      </p>
+        <li>EirCode:<input type="text" name="eircode" placeholder="D00" pattern="[A-Z]{1}[0-9]{2}"/></li>
+        <li>Credit Card:<input type="number" name="creditcard" placeholder="1111222233334444" pattern="[0-9]{16}"/></li>
+        <li>Birthday<input type="date" name="date" /></li>
+
+      </ul>
 
 
     <div class="button">
